@@ -6,7 +6,7 @@ export default function Home() {
   const navigate = useNavigate();
   return (
     <div style={{ textAlign: "center" }}>
-      <h1>LIST SUMMER</h1>
+      <h1>LIST SUMMER(modified)</h1>
 
       <List></List>
 
