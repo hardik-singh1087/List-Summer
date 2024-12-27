@@ -10,17 +10,18 @@ export default function ListEditor() {
     const num = Number(inputValue);
     if (!isNaN(num)) {
       setList([...list, num]);
-      setInputValue("");
+      setInputValue(""); // Clear the input box
     } else {
       alert("Please enter a valid number!");
     }
-  };
+  }
 
   return (
     <div style={{ marginTop: "20px" }}>
       <input
         type="text"
         placeholder="Enter a number"
+        value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
         style={{ marginRight: "10px", padding: "5px" }}
       />
